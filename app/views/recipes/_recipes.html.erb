@@ -1,0 +1,9 @@
+<% recipes.each do |recipe| %>
+  <div class="card mb-1">
+    <div class="card-body">
+        <p class="card-text"><%= recipe.title %></p>
+        <p class="card-text"><small><%= simple_format recipe.body %></small></p>
+        <!-- simple_format を書くことによって改行が反映される -->
+    </div>
+  </div>
+<% end %>
